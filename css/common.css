@@ -1,0 +1,18 @@
+:root {
+    --main-text-color: rgb(220, 191, 142);
+    --main-bg-color: #293340;
+    --main-brand-color: #040404;
+    --main-brand-color-light: #0d6475;
+    --main-brand-color-border-light: #151414;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.main-bg {
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+}
+
+* {
+    box-sizing: border-box;
+}

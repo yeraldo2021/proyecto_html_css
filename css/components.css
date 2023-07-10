@@ -1,0 +1,42 @@
+.btn {
+    color: var(--main-text-color);
+    background-color: var(--main-brand-color);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--main-brand-color);
+    
+    /* transition: background-color 2s; */
+}
+
+.btn.btn--circol {
+    border-radius: 15px;
+    border: none;
+}
+
+
+
+@media (hover: hover) {
+    .btn{
+    transition: background-color .3s linear;
+    }
+    .btn:hover{
+    background-color: var(--main-brand-color-light);
+    }
+}
+
+.btn.btn--secondary{
+    background-color: transparent; 
+    border-color: var(--main-text-color);
+
+}
+
+@media (hover: hover) {
+    .btn.btn--secondary{
+    transition: background-color .3s linear;
+   
+    }
+    .btn.btn--secondary:hover{
+    background-color: var(--main-brand-color-light);
+    border: 1px solid var(--main-brand-color-border-light);
+    }
+}

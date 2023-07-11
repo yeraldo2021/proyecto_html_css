@@ -1,0 +1,75 @@
+.shows{
+    width: 90%;
+    margin: 0 auto;
+    /* el valor depende del ancho que quieras ponerle */
+    max-width: 2560px;
+
+
+}
+
+.shows__list{
+    list-style: none;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* #columnas , fr */
+    grid-template-columns: repeat(2,1fr);
+    padding: 0;
+    gap: 20px;
+
+}
+
+/**********************CAMBIAR EL COLOR DEL PROGRESS************************/
+
+progress[value] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: rgb(20, 178, 235);
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: rgb(28, 54, 83);
+}
+
+/**********************CAMBIAR EL COLOR DEL PROGRESS************************/
+
+.progress__element{
+    display: flex;
+    flex-direction: column;
+}
+
+.progress__label{
+    /* margin-bottom: 10px; */
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+
+@media (min-width: 20em) {
+    .shows__list{
+      grid-template-columns: repeat(2,1fr);   
+    }
+}
+
+@media (min-width: 48em) {
+    .shows__list{
+      grid-template-columns: repeat(3,1fr);   
+    }
+}
+
+@media (min-width: 64rem) {
+    .shows__list{
+      grid-template-columns: repeat(4,1fr);   
+    }
+}
+
+@media (min-width: 160rem) {
+    .shows__list{
+      grid-template-columns: repeat(5,1fr);   
+    }
+}
+

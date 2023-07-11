@@ -1,0 +1,42 @@
+.btn__normal{
+    color: var(--main-text-color);
+    background-color: none;
+    /* padding: 10px; */
+    /* border-radius: 5px; */
+    border: none;
+}
+
+.header__nav .header__nav__list 
+.header__nav__list__item__normal > a {
+    text-decoration: none;
+}
+
+@media (hover: hover) { 
+    .btn__normal{ 
+    transition: background-color .3s linear;
+   
+    }
+    .btn__normal:hover{
+    color: var(--main-brand-color-light);
+    /* border: 1px solid var(--main-brand-color-border-light); */
+    }
+}
+/********************BOTON CON FONDO TRANSPARENTE************************/
+.btn.btn--secondary{
+    background-color: transparent; 
+    border-color: var(--main-text-color-btn);
+
+}
+
+@media (hover: hover) {
+    .btn.btn--secondary{
+    transition: background-color .3s linear;
+   
+    }
+    .btn.btn--secondary:hover{
+    background-color: var(--main-brand-color-light);
+    border: 1px solid var(--main-brand-color-border-light);
+    color: var( --main-text-color-btn);
+    
+    }
+}

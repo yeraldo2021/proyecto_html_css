@@ -3,7 +3,7 @@
     background-color: var(--main-bg-color);
     z-index: 999;
     top: 0;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,11 +18,12 @@
 }
 
 .header .header__image img {
-    width: 80%;
+    width: 65%;
     border-radius: 10px;
     box-shadow: 2px 2px teal;
 
 }
+/*****************BOTON CON FONDO ********************/
 .header .header__nav .header__nav__list {
     list-style: none;
     display: flex;
@@ -38,7 +39,7 @@
 
 @media  (768px <= width) {
     .header .header__image {
-        width: 150px;
+        width: 140px;
     }
     
 }

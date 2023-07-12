@@ -1,0 +1,51 @@
+.footer {
+    text-align: center;
+    font-style: italic;
+    /* background-color: var(--main-bg-color); */
+ 
+    padding-top: 10px;
+    padding: 50px 10px 10px 10px;
+    padding: 20px 0;
+    padding: 40px;
+
+   font-size: 12px;
+   /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+   background: rgb(238,174,202);
+background: radial-gradient(circle, rgb(0, 0, 1) 0%, rgb(0, 182, 185) 100%);
+
+
+}
+
+.footer p{
+    /* 1rem = 16px */
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    text-transform: capitalize;
+    /* line-height: 1.4; */
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* .footer__redes{
+    gap: 30px;
+    
+} */
+.footer .footer__company {
+    color: rgb(248, 196, 6);
+    font-style: normal;
+    
+}
+
+/* @media (48em <= width) {
+    .footer {
+        background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    }
+} */

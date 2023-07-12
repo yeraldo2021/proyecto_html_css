@@ -3,7 +3,7 @@
     background-color: var(--main-bg-color);
     z-index: 999;
     top: 0;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .header .header__image img {
-    width: 65%;
+    width: 80%;
     border-radius: 10px;
     box-shadow: 2px 2px teal;
 
@@ -36,10 +36,27 @@
 .header__nav__list__item > a {
     text-decoration: none;
 }
+/*****************MEDIDA DE LA IMAGEN DEL HEADER**********************/
+@media  (min-width: 20em) {
+    .header .header__image {
+        width: 100px;
+    }
+}
 
-@media  (768px <= width) {
+@media  (min-width: 48em) {
+    .header .header__image {
+        width: 120px;
+    }
+}
+
+@media  (min-width: 64em) {
     .header .header__image {
         width: 140px;
     }
-    
+}
+
+@media  (min-width: 160em) {
+    .header .header__image {
+        width: 160px;
+    }
 }

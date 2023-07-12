@@ -1,8 +1,6 @@
 .btn__normal{
     color: var(--main-text-color);
     background-color: none;
-    /* padding: 10px; */
-    /* border-radius: 5px; */
     border: none;
     padding: 10px;
 }
@@ -22,6 +20,15 @@
     /* border: 1px solid var(--main-brand-color-border-light); */
     }
 }
+
+/**************+**DESAPARECER EL BOTON NORMAL EN MOVIL****************************/
+
+@media (width < 48em) {
+    .btn__normal {
+        display: none;
+    }
+}
+
 /********************BOTON CON FONDO TRANSPARENTE************************/
 .btn.btn--secondary{
     background-color: transparent; 

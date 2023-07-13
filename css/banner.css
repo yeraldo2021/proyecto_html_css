@@ -39,17 +39,20 @@
     width: 100%;
     /* height: 200px; */
     border-radius: 10px 10px 0px 0px;
-    background-image: url(../banner\ 7.26.43\ p.\ m..png);
+    background-image: url(../img/foto-grande-banner.png);
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-/* @media  (width: 20em) {
-    .banner .banner__content .banner .banner__image {
-        background-image: url(../img/Diseño_sin_título_1_je6ujz_c_scale\,w_354.png);
+@media  (min-width: 48em) {
+    .banner .banner__image {
+       
+      
+        background-image: url(../img/foto-mediano-banner.png) !important;
     }
-} */
+}
 /* 
 @media  (min-width: 48em) {
     .header .header__image {

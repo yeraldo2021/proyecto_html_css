@@ -1,1 +1,183 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Portafolio</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/sign-in.css">
+</head>
+<body class="main-bg container">
+
+    <div class="card">
+
+        <nav class="">
+            
+            <ul class="">
+               
+                <li class="">
+                    <a class="btn__volver" href="index.html"> Volver </a>
+                </li>
+                
+                
+            </ul>
+        </nav>
+        <h1>Contact</h1>
+
+        <form class="form" method="get" action="registro.html">
+
+            <div>
+                <label class="form__contact__label" for="name">Nombre</label>
+                <input class="form__contact__input" id="name" type="name" id="name" placeholder="Nombre" required>
+            </div>
+
+            <div>
+                <label class="form__contact__label" for="surname">Apellido</label>
+                <input class="form__contact__input" id="surname" type="surname" id="surname" placeholder="Apellido">
+            </div>
+
+            <div class="">
+                <label class="form__contact__label" for="phone">Celular</label>
+                <input 
+                class="form__contact__input"
+                type="tel" 
+                id="phone" 
+                name="phone"
+                placeholder="Ejemplo 982-527-744"
+                title="Ejemplo 982-527-744"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                required
+                >
+            </div>
+
+            <fieldset class="form__element">
+                <legend>¿Cómo me conociste?</legend>
+                <div>
+                    <input type="radio" id="show" name="category" checked value="show">
+                    <label for="show">Universidad</label>
+                    <input type="radio" id="docus" name="category" value="docus">
+                    <label for="docus">keepcoding kick-off</label>
+                    <input type="radio" id="docus" name="category" value="docus">
+                    <label for="docus">Colegio</label>
+                    <input type="radio" id="docus" name="category" value="docus">
+                    <label for="docus">Github</label>
+                </div>
+            </fieldset>
+
+            <div class="form__element">
+                <label class="form__label" for="email">Github username</label>
+                <input 
+                class="form__input"
+                id="email" 
+                type="email" 
+                placeholder="Con este formato(@<username>)"
+                name="mail"
+                required
+                >
+            </div>
+
+            <div class="form__element">
+                <label class="form__label" for="bio">Más información</label>
+                <textarea class="form__input" name="bio" id="bio" placeholder="Agregar comentario" required minlength="10"
+                maxlength="180"
+                ></textarea>
+            </div>
+
+            <div class="form__element form__element--checkbox">
+                <input 
+                type="checkbox" 
+                name="remember" 
+                id="remember" 
+                data-message="error campo requerido" 
+                checked
+                >
+                <label for="remember">Acceso a la newsletter</label>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- <div class="form__element">
+                <label class="form__label" for="email">Email</label>
+                <input 
+                class="form__input"
+                id="email" 
+                type="email" 
+                placeholder="Add your email"
+                name="mail"
+                required
+                >
+            </div>
+            <div class="form__element">
+                <label class="form__label" for="age">Age</label>
+                <input class="form__input" type="number" id="age" required min="18" max="65">
+            </div>
+            <div class="form__element">
+                <label class="form__label" for="pwd">Password</label>
+                <input class="form__input" type="password" id="pwd" name="pwd" required>
+            </div>
+            <div class="form__element">
+                <label class="form__label" for="phone">Phone</label>
+                <input 
+                class="form__input"
+                type="tel" 
+                id="phone" 
+                name="phone"
+                placeholder="Format is 600-000-0000"
+                title="Format is 600-000-0000"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+                >
+            </div>
+            <div class="form__element">
+                <label class="form__label" for="avatar">Avatar image</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+            </div>
+            <fieldset class="form__element">
+                <legend>Fav category</legend>
+                <div>
+                    <label for="show">Shows</label>
+                    <input type="radio" id="show" name="category" checked value="show">
+                    <label for="docus">Docus</label>
+                    <input type="radio" id="docus" name="category" value="docus">
+                </div>
+            </fieldset>
+            <div class="form__element">
+                <label class="form__label" for="bio">Bio</label>
+                <textarea class="form__input" name="bio" id="bio" placeholder="Add your bio" required minlength="10"
+                maxlength="240"
+                ></textarea>
+            </div>
+            <div class="form__element form__element--checkbox">
+                <input 
+                type="checkbox" 
+                name="remember" 
+                id="remember" 
+                data-message="error campo requerido" 
+                checked
+                >
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="form__element">
+                <label class="form__label" for="country">country</label>
+                <select name="country" id="country" required>
+                    <option value="">Select one country</option>
+                    <option value="es">Spain</option>
+                    <option value="us">USA</option>
+                </select>
+            </div> -->
+            <div>
+                <button class="btn btn--secondary" type="reset">Reset</button>
+                <input class="btn" type="submit" value="Sign in">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

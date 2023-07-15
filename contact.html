@@ -4,41 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Portafolio</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/sign-in.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/btn_normal.css">
+    <link rel="stylesheet" href="css/form_contact.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-<body class="main-bg container">
+<header class="header">
+    <div class="header__image">
+        <a href="index.html">
+        <img src="img/logo-header.jpg" alt="Portafolio" title="Portafolio" href="index.html">
+        </a> 
+    </div>
+    <nav class="header__nav">
+        
+        <ul class="header__nav__list">
+            <!-- <nav class="header__nav__list__item__normal">
+                <input type="checkbox" id="menu">
+                <label  for="menu"> ☰ </label>
+            </nav> -->
+            <li class="header__nav__list__item__normal">
+                <a class="btn__normal" href="#">Portafolio </a>
+            </li>
+            <li class="header__nav__list__item__normal">
+                <a class="btn__normal" href="#">Experiencia </a>
+            </li>
+            <li class="header__nav__list__item">
+                <a class="btn btn--secondary hidden-xs" href="contact.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <body>
+<section class="main-bg container">
 
-    <div class="card">
+     <div class="card">
 
-        <nav class="">
-            
-            <ul class="">
-               
-                <li class="">
-                    <a class="btn__volver" href="index.html"> Volver </a>
-                </li>
-                
-                
-            </ul>
-        </nav>
         <h1>Contact</h1>
 
         <form class="form" method="get" action="registro.html">
 
-            <div>
+            <div class="form__element">
                 <label class="form__contact__label" for="name">Nombre</label>
                 <input class="form__contact__input" id="name" type="name" id="name" placeholder="Nombre" required>
             </div>
 
-            <div>
+            <div class="form__element">
                 <label class="form__contact__label" for="surname">Apellido</label>
                 <input class="form__contact__input" id="surname" type="surname" id="surname" placeholder="Apellido">
             </div>
 
-            <div class="">
+            <div class="form__element">
                 <label class="form__contact__label" for="phone">Celular</label>
                 <input 
                 class="form__contact__input"
@@ -54,34 +73,45 @@
             </div>
 
             <fieldset class="form__element">
-                <legend>¿Cómo me conociste?</legend>
-                <div>
-                    <input type="radio" id="show" name="category" checked value="show">
-                    <label for="show">Universidad</label>
-                    <input type="radio" id="docus" name="category" value="docus">
-                    <label for="docus">keepcoding kick-off</label>
-                    <input type="radio" id="docus" name="category" value="docus">
-                    <label for="docus">Colegio</label>
-                    <input type="radio" id="docus" name="category" value="docus">
-                    <label for="docus">Github</label>
+                <legend class="form__contact__label">¿Cómo me conociste?</legend>
+                <br>
+                <div class="form__orden">
+                    <div class="form__orden__item">
+                        <input class="" type="radio" id="show" name="universidad" checked value="">
+                        <label class="" for="show">Universidad</label>
+                    </div>
+                    <div class="form__orden__item">
+                        <input type="radio" id="radio" name="universidad" value="">
+                        <label for="docus">keepcoding kick-off</label>
+                    </div>
+                    <div class="form__orden__item">
+                        <input type="radio" id="radio" name="universidad" value="">
+                        <label for="docus">Colegio</label>
+                    </div>
+                    <div class="form__orden__item">
+                        <input type="radio" id="radio" name="universidad" value="">
+                        <label for="docus">Github</label>
+                    </div>
                 </div>
+                <br>
             </fieldset>
 
             <div class="form__element">
-                <label class="form__label" for="email">Github username</label>
+                <label class="form__contact__label" for="email">Github username</label>
                 <input 
-                class="form__input"
-                id="email" 
-                type="email" 
-                placeholder="Con este formato(@<username>)"
-                name="mail"
+                class="form__contact__input"
+                id="box" 
+                type="box" 
+                placeholder="Usar el formato(@<username>)"
+                pattern="^@[^\s]+"    
+                name="github"
                 required
                 >
             </div>
 
             <div class="form__element">
-                <label class="form__label" for="bio">Más información</label>
-                <textarea class="form__input" name="bio" id="bio" placeholder="Agregar comentario" required minlength="10"
+                <label class="form__contact__label" for="bio">Más información</label>
+                <textarea class="form__contact__input" name="bio" id="bio" placeholder="Agregar comentario" required minlength="10"
                 maxlength="180"
                 ></textarea>
             </div>
@@ -175,10 +205,56 @@
                 </select>
             </div> -->
             <div>
-                <button class="btn btn--secondary" type="reset">Reset</button>
-                <input class="btn" type="submit" value="Sign in">
+                <button class="btn btn--secondary" type="reset">Borrar</button>
+                <input class="btn" type="submit" value="Enviar">
             </div>
         </form>
     </div>
+</section>
+   
 </body>
+</main>
+<footer class="footer">
+
+    <div class="footer__list">
+        <div class="footer__list__icon">
+            <img class="icon__redes" src="icon/facebook.png" alt="">
+            <p class="footer__icon__text">facebook</p>
+        </div>
+        <div class="footer__list__icon">
+            <img class="icon__redes" src="icon/gorjeo.png" alt="">
+            <p class="footer__icon__text">twitter</p>
+        </div>
+        <div class="footer__list__icon">
+            <img class="icon__redes" src="icon/instagram.png" alt="">
+            <p class="footer__icon__text">instagram</p>
+        </div>
+        <div class="footer__list__icon">
+            <img class="icon__redes" src="icon/whatsapp.png" alt="">
+            <p class="footer__icon__text">whatsapp</p>
+        </div>
+        <!-- <div class="progress__element">
+            <label class="progress__label" for="file">youtube</label>
+            <progress max="100" value="90"></progress>
+        </div> -->
+      
+    </div>
+
+    <!-- <p>2023 <em>Gerardo Quispe</em> website</p>  
+    <p class="footer__company">Powered by keepcoding</p>
+
+    <div class="footer__redes">
+        
+            <a class="footer__redes__a">facebook</a>
+      
+            <a class="footer__redes__a" href="">twitter</a>
+       
+            <a class="footer__redes__a" href="">instagram</a>
+      
+            <a class="footer__redes__a" href="">whatsapp</a>
+      
+    
+    </div> -->
+   
+</footer>
 </html>

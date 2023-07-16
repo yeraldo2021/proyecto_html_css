@@ -1,0 +1,33 @@
+@keyframes fade-in {
+    /* inicio */
+    0%{ 
+        opacity: 0;
+
+    } 
+    /* fin */
+    100%{
+        opacity: 1;
+    }
+}
+
+.efecto {
+    animation-name: fade-in;
+    /* animation-duration: 5s; */
+    animation-timing-function: linear;
+    animation: fade-in 1s linear;
+}
+
+
+p, h2, label{
+    animation-name: fade-in;
+    /* animation-duration: 5s; */
+    animation-timing-function: linear;
+    animation: fade-in 1s linear;
+}
+
+progress {
+    animation-name: fade-in;
+    /* animation-duration: 5s; */
+    animation-timing-function: linear;
+    animation: fade-in 3s linear;
+}

@@ -1,0 +1,19 @@
+ .video video{
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 0px;
+  
+}
+.shows .video{
+   
+    padding-top: 25px;
+}
+
+/* .video__grid{
+    display: grid;
+    gap: 40px;
+} */

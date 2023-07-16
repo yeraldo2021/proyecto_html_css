@@ -3,3 +3,34 @@
     padding-bottom: 64px;
 }
 
+.shows{
+    width: 90%;
+    margin: 0 auto;
+    /* el valor depende del ancho que quieras ponerle */
+    max-width: 1220px;
+    
+}
+
+.shows__list{
+    list-style: none;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* #columnas , fr */
+    grid-template-columns: repeat(2,1fr);
+    padding: 0;
+    gap: 15px;
+}
+
+.shows .shows__list img {
+    width: 100%;
+}
+
+.shows .shows__list figure {
+    margin: 0;
+}
+/* @media (min-width: 768px) { */
+@media (min-width: 48em) {
+    .shows__list{
+      grid-template-columns: repeat(4,1fr);   
+    }
+}

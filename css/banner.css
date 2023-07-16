@@ -12,7 +12,23 @@
    
     position: relative;
     z-index: 1;  
+    
 }
+
+.banner__content a {
+    text-decoration: none;
+    padding: 30px;
+  
+    font-size: 30px;
+    background: -webkit-linear-gradient(#ffffff, #00fff2, #038ecf, #ffffff);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* border-color: #03f4e8; */
+    border-radius: 50px;
+    font-weight: 600;
+}
+
 
 .banner .banner__image {
     position: absolute;
